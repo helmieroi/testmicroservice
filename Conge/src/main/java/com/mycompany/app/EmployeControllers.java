@@ -16,7 +16,7 @@ public class EmployeControllers {
    private final EmployeService employeService;
     @PostMapping
     public void registerEmploye(@RequestBody RequestRegistrationEmploye requestRegistrationEmploye){
-        log.info("new eemploye {}", requestRegistrationEmploye);
+        log.info("new employe {}", requestRegistrationEmploye);
         employeService.registerEmploye(requestRegistrationEmploye);
 
     }
